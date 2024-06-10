@@ -6,6 +6,7 @@ import { Sobre } from './pages/Sobre';
 import { Page404 } from './pages/404';
 import { Header } from './components/Header';
 import { Post } from './pages/Post';
+import { Category } from './pages/Category';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='/sobre' element={<Sobre />} />
         <Route path='/posts/:id' element={<Post />} />
+        <Route path='/categoria/:id/*' element={<Category />} />
         <Route path='*' element={<Page404 />} />
       </Routes>
     </Router>
